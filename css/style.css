@@ -1,0 +1,190 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.4s all linear;
+    font-size: 30px;
+   /* background-color: rgb(230, 232, 238); */
+
+}
+
+/* header */
+
+header{
+
+    font-size: 15px;
+    position: fixed;
+    top:0; 
+    left:0; 
+    right:0; 
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(96, 135, 198);
+    align-items: center;
+    padding: 10px 50px; 
+   
+}
+
+header img{
+width: 190px;
+height: 70px;
+margin-left: 50px;
+
+}
+
+header .navbar a{
+    margin-left: auto; /* Pushes the text to the right */
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menu-bar{
+    font-size: 35px;
+    cursor:pointer;
+    color: rgb(255, 255, 255);
+    margin-right: auto;
+    display:none;
+}
+
+
+
+/*  image */
+
+section{
+    padding: 70px;
+}
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap:10px;
+    padding-top: 120px;
+    max-width: 300 rsm;
+    background-color: rgb(96, 135, 198);
+    
+    /*margin-left: 50 rsm;*/
+}
+
+.profile img{
+   padding-left: 50 rsm;
+
+   
+}
+
+/*  bio  */
+
+.bio {
+    background-color: rgb(96, 135, 198); }
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color:white;
+    background-color: rgb(96, 135, 198);
+}
+
+.description { 
+    color:white ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.dscription span{
+    color:rgb(241, 153, 0) ;
+    font-size: 24px;
+        text-align: center;
+}
+
+.description img{
+    width: 45px;
+    height: 45px;
+    padding-top: 20px;
+}
+.btn {
+    padding: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    color:rgb(255, 255, 255);
+    border-radius: 5px; 
+    z-index: 0;
+}
+.btn:hover{
+    background-color:
+    rgb(12, 54, 181);
+    color: rgb(255, 255, 255);
+    border-color: rgba(8, 21, 50, 0);
+    box-shadow: inset 200px 0 0 0 rgb(12, 54, 181);
+    transition: 1s all;
+}
+/*  HCI Work  */
+
+
+
+
+
+/*  AD Work  */
+
+
+
+/*  Blog  */
+
+
+
+/*  Interests */
+
+
+
+
+/*  Contact */
+
+
+
+
+/*   RED Mobile  */
+
+@media (max-width: 600px){
+    #menu-bar{
+    display: initial; 
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    }
+
+    header .navbar{
+    position: absolute;
+    top:80px; 
+    left:0; 
+    right:0; 
+    background-color: rgb(96, 135, 198);
+    border-top:0.5px solid rgb(46, 46, 46); ;
+    /* 隱藏下拉選單 */
+
+    clip-path: polygon(0 0, 100% 0, 100% 0, 00);
+    }
+
+    header .navbar  a{
+        display: block; 
+        font-size: 17px;
+        font-weight: normal;
+        color: rgb(0, 45, 121); 
+        margin: 10px; 
+        padding: 6px; 
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    header.navbar.active{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: 10px;
+    }
+}
